@@ -1,0 +1,28 @@
+﻿<Window x:Class="KR.LichStrRabot2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KR"
+        mc:Ignorable="d"
+        Title="LichStrRabot2" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="20" FontSize="25"> <Bold>Акватория - личнавя страница</Bold></TextBlock>
+
+        <TextBlock FontSize="15" Grid.Row="1" Text="Статистика по смене:" Margin="20"/>
+
+        <TextBlock FontSize="15" Text="Количество выполненных заказов:" Margin="20" Grid.Row="2"/>
+
+        <TextBlock FontSize="15" Text="Выручка за день:" Margin="20" Grid.Row="3"/>
+
+        <Button Content="Выйти" Grid.Row="4" Margin="0,0,10,-155" Width="150" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="Blue" Foreground="White"/>
+
+    </Grid>
+</Window>
