@@ -8,21 +8,16 @@
         Title="LichStrRabot2" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition Height="50"/>
+
         </Grid.RowDefinitions>
-        <TextBlock Margin="20" FontSize="25"> <Bold>Акватория - личнавя страница</Bold></TextBlock>
+        <TextBlock FontSize="25"> <Bold>Акватория - Статистика</Bold></TextBlock>
 
-        <TextBlock FontSize="15" Grid.Row="1" Text="Статистика по смене:" Margin="20"/>
+        <Grid Grid.Row="2">
 
-        <TextBlock FontSize="15" Text="Количество выполненных заказов:" Margin="20" Grid.Row="2"/>
-
-        <TextBlock FontSize="15" Text="Выручка за день:" Margin="20" Grid.Row="3"/>
-
-        <Button Content="Выйти" Grid.Row="4" Margin="0,0,10,-155" Width="150" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="Blue" Foreground="White"/>
-
+            <Button Content="Выйти"  Width="150" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="Blue" Foreground="White"/>
+        </Grid>
+        <TextBox HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" Height="324"/>
     </Grid>
 </Window>

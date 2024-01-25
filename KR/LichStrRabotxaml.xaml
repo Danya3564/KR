@@ -6,26 +6,32 @@
         xmlns:local="clr-namespace:KR"
         mc:Ignorable="d"
         Title="LichStrRabotxaml" Height="450" Width="800">
-    <Grid>
+    
+    <Grid Background="Bisque">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
         <TextBlock Margin="20" FontSize="25"> <Bold>Акватория - личная страница</Bold></TextBlock>
 
         <TextBlock FontSize="15" Grid.Row="1" Text="Информация о текущем заказе:" Margin="20"/>
-            
+
+
         <TextBlock FontSize="15" Text="Номер заказа:" Margin="20" Grid.Row="2"/>
 
-        <TextBlock FontSize="15" Text="Статус заказа: в работе" Margin="20" Grid.Row="3"/>
+        <TextBlock Grid.Row="3" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0"> Статус заказа:</TextBlock>
 
+        <ComboBox Grid.Row="3" Height="25"  Width="350">
+            <ComboBoxItem>В работе</ComboBoxItem>
+            <ComboBoxItem>Выполнен</ComboBoxItem>
+        </ComboBox>
 
-        <Button Content="Завершить смену" Grid.Row="4" Margin="0,0,0,-153" Width="150" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" Background="Blue" Foreground="White"/>
+        <Button Content="Завершить смену" Grid.Row="4" Width="150" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" Background="Blue" Foreground="White" Margin="10,0,0,10"/>
 
-        <Button Content="Выйти" Grid.Row="4" Margin="0,0,10,-153" Width="150" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="Blue" Foreground="White"/>
+        <Button Content="Выйти" Grid.Row="4" Width="150" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="Blue" Foreground="White" Margin="0,0,10,10"/>
 
     </Grid>
 </Window>
