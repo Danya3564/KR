@@ -14,14 +14,29 @@ using System.Windows.Shapes;
 
 namespace KR
 {
-    /// <summary>
-    /// Логика взаимодействия для LichStrRabotxaml.xaml
-    /// </summary>
+
     public partial class LichStrRabotxaml : Window
     {
         public LichStrRabotxaml()
         {
             InitializeComponent();
+        }
+
+        private void FinishShiftButton_Click(object sender, RoutedEventArgs e)
+        {
+            string status = ((ComboBoxItem)statusComboBox.SelectedItem)?.Content.ToString();
+            if (string.IsNullOrEmpty(status))
+            {
+                MessageBox.Show("Пожалуйста, выберите статус заказа.");
+                return;
+            }
+
+
+        }
+
+        private void LogoutButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

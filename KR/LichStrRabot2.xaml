@@ -16,8 +16,8 @@
 
         <Grid Grid.Row="2">
 
-            <Button Content="Выйти"  Width="150" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="Blue" Foreground="White"/>
+            <Button x:Name="LogoutButton" Content="Выйти"  Width="150" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="Blue" Foreground="White"/>
         </Grid>
-        <TextBox HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" Height="324"/>
+        <TextBox x:Name="txtBox" HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" Height="324"/>
     </Grid>
 </Window>

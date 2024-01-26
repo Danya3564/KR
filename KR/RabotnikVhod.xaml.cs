@@ -14,14 +14,47 @@ using System.Windows.Shapes;
 
 namespace KR
 {
-    /// <summary>
-    /// Логика взаимодействия для RabotnikVhod.xaml
-    /// </summary>
+
     public partial class RabotnikVhod : Window
     {
         public RabotnikVhod()
         {
             InitializeComponent();
         }
+       
+            private void LoginButton_Click(object sender, RoutedEventArgs e)
+            {
+                string username = txtLogin.Text;
+                string password = txtPassword.Password;
+
+
+                if (username == "user" && password == "password")
+                {
+                    StartShift();
+                }
+                else
+                {
+                    MessageBox.Show("Неверный логин или пароль");
+                }
+            }
+
+            private void StartShift()
+            {
+                string selectedBox = txtBox.Text;
+
+                if (!string.IsNullOrEmpty(selectedBox))
+                {
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Пожалуйста, укажите бокс для работы");
+                }
+            }
+
+            private void CompleteShift()
+            {
+               
+            }
+        }
     }
-}

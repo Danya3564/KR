@@ -6,7 +6,25 @@
         xmlns:local="clr-namespace:KR"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="Bisque">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image Source="/Image1.png" Stretch="Fill"/>
+
+        <StackPanel Margin="10,150,10,150" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Orientation="Vertical">
+
+            <Button x:Name="UserPage" Height="30" Margin="5" Background="Blue" Foreground="White">Пользователь</Button>
+            <Button x:Name="EmployeePage"  Height="30" Margin="5" Background="Blue" Foreground="White">Работник</Button>
+            <Button Height="30" Margin="5" Background="Blue" Foreground="White">Администратор</Button>
+
+        </StackPanel>
     </Grid>
 </Window>

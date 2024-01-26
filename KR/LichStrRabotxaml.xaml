@@ -24,12 +24,12 @@
 
         <TextBlock Grid.Row="3" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0"> Статус заказа:</TextBlock>
 
-        <ComboBox Grid.Row="3" Height="25"  Width="350">
+        <ComboBox Grid.Row="3" Height="25"  Width="350" x:Name="statusComboBox">
             <ComboBoxItem>В работе</ComboBoxItem>
             <ComboBoxItem>Выполнен</ComboBoxItem>
         </ComboBox>
 
-        <Button Content="Завершить смену" Grid.Row="4" Width="150" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" Background="Blue" Foreground="White" Margin="10,0,0,10"/>
+        <Button Content="Завершить смену" Grid.Row="4" Width="150" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" Background="Blue" Foreground="White" Margin="10,0,0,10" />
 
         <Button Content="Выйти" Grid.Row="4" Width="150" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="Blue" Foreground="White" Margin="0,0,10,10"/>
 

@@ -17,13 +17,13 @@
         <TextBlock Margin="5" FontSize="25"> <Bold>Акватория - вход в систему</Bold></TextBlock>
 
         <TextBlock Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" Text="Введите логин:" Height="30" Width="150"/>
-        <TextBox Width="350" Grid.Row="1" Height="30" />
+        <TextBox Width="350" Grid.Row="1" Height="30"  x:Name="txtLogin" />
 
         <TextBlock FontSize="20" Text="Введите пароль:" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="2" Height="30" Width="150"/>
-        <PasswordBox Grid.Row="2" Height="30" Width="350"/>
+        <PasswordBox x:Name="txtPassword" Grid.Row="2" Height="30" Width="350"/>
 
         <TextBlock FontSize="15" Text="Укажите бокс для работы:" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="3"/>
-        <TextBox  Width="100" Height="20" Grid.Row="3"/>
+        <TextBox  Width="100" Height="20" Grid.Row="3" x:Name="txtBox"/>
 
         <Button FontSize="15" Content="Войти" Grid.Row="4" Width="150" Height="40" HorizontalAlignment="Left" Background="Blue" Foreground="White" Margin="640,24,0,23"/>
     </Grid>
